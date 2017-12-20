@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <role>
     <identifier>Everybody</identifier>
+    <role>
+        <identifier>Girl</identifier>
+    </role>
+    <role>
+        <identifier>Boy</identifier>
+    </role>
+    <role>
+        <identifier>Lover</identifier>
+        <roleMembers>
+            <role>Girl</role>
+            <role>Boy</role>
+        </roleMembers>
+    </role>
 </role>

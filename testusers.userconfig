@@ -1,2 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<userConfig/>
+<userConfig>
+    <user>
+        <username>romeo</username>
+        <password>1234</password>
+        <role>Boy</role>
+    </user>
+    <user>
+        <username>juliet</username>
+        <password>1234</password>
+        <role>Girl</role>
+    </user>
+</userConfig>

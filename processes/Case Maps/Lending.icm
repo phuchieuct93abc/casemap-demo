@@ -1,0 +1,56 @@
+{
+  "uuid" : "d4678a56-233d-42f7-9c17-d78d29d3a9fb",
+  "id" : "lending",
+  "name" : "Lending",
+  "stages" : [ {
+    "id" : "preparation",
+    "name" : "Preparation",
+    "icon" : "css:fa fa-child",
+    "processes" : [ {
+      "id" : "find_the",
+      "name" : "Find the girl"
+    }, {
+      "id" : "do_gym_sport",
+      "name" : "Do gym/sport",
+      "processToExecute" : "casemap.demo:casemap-demo:16071F6BEB21A58A/start.ivp"
+    } ]
+  }, {
+    "id" : "be_friend",
+    "name" : "Be Friend",
+    "icon" : "css:fa fa-american-sign-language-interpreting",
+    "processes" : [ {
+      "id" : "get_notice_contact",
+      "name" : "Get notice & contact",
+      "processToExecute" : "casemap.demo:casemap-demo:16071FBE763A34B7/start.ivp"
+    }, {
+      "id" : "chatting",
+      "name" : "Chatting",
+      "processToExecute" : "casemap.demo:casemap-demo:16071FC2883EA5CC/start.ivp"
+    }, {
+      "id" : "dating",
+      "name" : "Dating",
+      "processToExecute" : "casemap.demo:casemap-demo:16071FD0B1B29525/start.ivp"
+    } ],
+    "sidesteps" : [ {
+      "id" : "gifts_for_girl",
+      "name" : "Gifts for Girl"
+    } ]
+  }, {
+    "id" : "be_boyfriend",
+    "name" : "Be Boyfriend",
+    "icon" : "css:fa fa-heart",
+    "processes" : [ {
+      "id" : "express_love",
+      "name" : "Express love",
+      "processToExecute" : "casemap.demo:casemap-demo:16071FD5B8292DD6/start.ivp"
+    }, {
+      "id" : "start_your_love",
+      "name" : "Start your love",
+      "processToExecute" : "casemap.demo:casemap-demo:16071FD8FE232BF5/start.ivp",
+      "preCondition" : {
+        "script" : "",
+        "label" : "does she accept your love?"
+      }
+    } ]
+  } ]
+}
