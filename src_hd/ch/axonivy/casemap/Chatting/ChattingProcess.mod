@@ -20,9 +20,6 @@ Cs0 @PushWFArc f2 '' #zField
 Cs0 @RichDialogProcessStart f3 '' #zField
 Cs0 @RichDialogEnd f4 '' #zField
 Cs0 @PushWFArc f5 '' #zField
-Cs0 @RichDialogProcessEnd f7 '' #zField
-Cs0 @RichDialogProcessStart f6 '' #zField
-Cs0 @PushWFArc f8 '' #zField
 >Proto Cs0 Cs0 ChattingProcess #zField
 Cs0 f0 guid 1607380ED04D120A #txt
 Cs0 f0 type ch.axonivy.casemap.Chatting.ChattingData #txt
@@ -68,28 +65,6 @@ Cs0 f4 211 147 26 26 0 12 #rect
 Cs0 f4 @|RichDialogEndIcon #fIcon
 Cs0 f5 expr out #txt
 Cs0 f5 109 160 211 160 #arcP
-Cs0 f7 type ch.axonivy.casemap.Chatting.ChattingData #txt
-Cs0 f7 212 248 26 26 0 12 #rect
-Cs0 f7 @|RichDialogProcessEndIcon #fIcon
-Cs0 f6 guid 160738D47B98CBCD #txt
-Cs0 f6 type ch.axonivy.casemap.Chatting.ChattingData #txt
-Cs0 f6 actionDecl 'ch.axonivy.casemap.Chatting.ChattingData out;
-' #txt
-Cs0 f6 actionTable 'out=in;
-' #txt
-Cs0 f6 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<elementInfo>
-    <language>
-        <name>buyGift</name>
-        <nameStyle>7,5,7
-</nameStyle>
-    </language>
-</elementInfo>
-' #txt
-Cs0 f6 84 248 26 26 -18 15 #rect
-Cs0 f6 @|RichDialogProcessStartIcon #fIcon
-Cs0 f8 expr out #txt
-Cs0 f8 110 261 212 261 #arcP
 >Proto Cs0 .type ch.axonivy.casemap.Chatting.ChattingData #txt
 >Proto Cs0 .processKind HTML_DIALOG #txt
 >Proto Cs0 -8 -8 16 16 16 26 #rect
@@ -98,5 +73,3 @@ Cs0 f0 mainOut f2 tail #connect
 Cs0 f2 head f1 mainIn #connect
 Cs0 f3 mainOut f5 tail #connect
 Cs0 f5 head f4 mainIn #connect
-Cs0 f6 mainOut f8 tail #connect
-Cs0 f8 head f7 mainIn #connect

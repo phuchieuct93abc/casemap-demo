@@ -26,9 +26,6 @@ Cs0 @GridStep f9 '' #zField
 Cs0 @PushWFArc f10 '' #zField
 Cs0 @PushWFArc f2 '' #zField
 Cs0 @PushWFArc f11 '' #zField
-Cs0 @RichDialogProcessStart f12 '' #zField
-Cs0 @RichDialogProcessEnd f13 '' #zField
-Cs0 @PushWFArc f14 '' #zField
 >Proto Cs0 Cs0 CollectContactProcess #zField
 Cs0 f0 guid 1607358F634FD040 #txt
 Cs0 f0 type ch.axonivy.casemap.CollectContact.CollectContactData #txt
@@ -129,28 +126,6 @@ Cs0 f11 expr out #txt
 Cs0 f11 112 241 224 182 #arcP
 Cs0 f11 1 224 241 #addKink
 Cs0 f11 1 0.02988247599998534 0 0 #arcLabel
-Cs0 f12 guid 160738C1CFA9CFF2 #txt
-Cs0 f12 type ch.axonivy.casemap.CollectContact.CollectContactData #txt
-Cs0 f12 actionDecl 'ch.axonivy.casemap.CollectContact.CollectContactData out;
-' #txt
-Cs0 f12 actionTable 'out=in;
-' #txt
-Cs0 f12 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<elementInfo>
-    <language>
-        <name>buyGift</name>
-        <nameStyle>7,5,7
-</nameStyle>
-    </language>
-</elementInfo>
-' #txt
-Cs0 f12 83 307 26 26 -18 15 #rect
-Cs0 f12 @|RichDialogProcessStartIcon #fIcon
-Cs0 f13 type ch.axonivy.casemap.CollectContact.CollectContactData #txt
-Cs0 f13 275 307 26 26 0 12 #rect
-Cs0 f13 @|RichDialogProcessEndIcon #fIcon
-Cs0 f14 expr out #txt
-Cs0 f14 109 320 275 320 #arcP
 >Proto Cs0 .type ch.axonivy.casemap.CollectContact.CollectContactData #txt
 >Proto Cs0 .processKind HTML_DIALOG #txt
 >Proto Cs0 -8 -8 16 16 16 26 #rect
@@ -165,5 +140,3 @@ Cs0 f9 mainOut f2 tail #connect
 Cs0 f2 head f1 mainIn #connect
 Cs0 f6 mainOut f11 tail #connect
 Cs0 f11 head f7 mainIn #connect
-Cs0 f12 mainOut f14 tail #connect
-Cs0 f14 head f13 mainIn #connect

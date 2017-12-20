@@ -20,9 +20,6 @@ Es0 @PushWFArc f2 '' #zField
 Es0 @RichDialogProcessStart f3 '' #zField
 Es0 @RichDialogEnd f4 '' #zField
 Es0 @PushWFArc f5 '' #zField
-Es0 @RichDialogProcessStart f6 '' #zField
-Es0 @RichDialogProcessEnd f7 '' #zField
-Es0 @PushWFArc f8 '' #zField
 >Proto Es0 Es0 ExecuteDateProcess #zField
 Es0 f0 guid 16073818A2E5C17A #txt
 Es0 f0 type ch.axonivy.casemap.ExecuteDate.ExecuteDateData #txt
@@ -68,28 +65,6 @@ Es0 f4 211 147 26 26 0 12 #rect
 Es0 f4 @|RichDialogEndIcon #fIcon
 Es0 f5 expr out #txt
 Es0 f5 109 160 211 160 #arcP
-Es0 f6 guid 160738ABABEBFB1A #txt
-Es0 f6 type ch.axonivy.casemap.ExecuteDate.ExecuteDateData #txt
-Es0 f6 actionDecl 'ch.axonivy.casemap.ExecuteDate.ExecuteDateData out;
-' #txt
-Es0 f6 actionTable 'out=in;
-' #txt
-Es0 f6 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<elementInfo>
-    <language>
-        <name>buyGift</name>
-        <nameStyle>7,5,7
-</nameStyle>
-    </language>
-</elementInfo>
-' #txt
-Es0 f6 83 243 26 26 -18 15 #rect
-Es0 f6 @|RichDialogProcessStartIcon #fIcon
-Es0 f7 type ch.axonivy.casemap.ExecuteDate.ExecuteDateData #txt
-Es0 f7 211 243 26 26 0 12 #rect
-Es0 f7 @|RichDialogProcessEndIcon #fIcon
-Es0 f8 expr out #txt
-Es0 f8 109 256 211 256 #arcP
 >Proto Es0 .type ch.axonivy.casemap.ExecuteDate.ExecuteDateData #txt
 >Proto Es0 .processKind HTML_DIALOG #txt
 >Proto Es0 -8 -8 16 16 16 26 #rect
@@ -98,5 +73,3 @@ Es0 f0 mainOut f2 tail #connect
 Es0 f2 head f1 mainIn #connect
 Es0 f3 mainOut f5 tail #connect
 Es0 f5 head f4 mainIn #connect
-Es0 f6 mainOut f8 tail #connect
-Es0 f8 head f7 mainIn #connect
