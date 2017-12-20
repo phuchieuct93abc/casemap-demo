@@ -8,7 +8,8 @@
     "icon" : "css:fa fa-child",
     "processes" : [ {
       "id" : "find_the",
-      "name" : "Find the girl"
+      "name" : "Find the girl",
+      "processToExecute" : "casemap.demo:casemap-demo:16071FB88CCD55E7/start.ivp"
     }, {
       "id" : "do_gym_sport",
       "name" : "Do gym/sport",

@@ -31,8 +31,8 @@ TaskTriggered.EXTYPE=0
 TaskTriggered.EXPRI=2
 TaskTriggered.TYPE=0
 TaskTriggered.PRI=2
-TaskTriggered.EXROL=Everybody
-TaskTriggered.NAM=express love from ' #txt
+TaskTriggered.NAM=express love from 
+TaskTriggered.EXROL=Everybody' #txt
 ee0 f0 caseData businessCase.attach=true #txt
 ee0 f0 showInStartList 0 #txt
 ee0 f0 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
@@ -44,7 +44,7 @@ ee0 f0 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
     </language>
 </elementInfo>
 ' #txt
-ee0 f0 @C|.responsibility Girl #txt
+ee0 f0 @C|.responsibility Boy #txt
 ee0 f0 81 49 30 30 -21 17 #rect
 ee0 f0 @|StartRequestIcon #fIcon
 ee0 f1 type ch.axonivy.casemap.Data #txt
