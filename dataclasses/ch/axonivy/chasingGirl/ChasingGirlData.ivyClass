@@ -1,0 +1,9 @@
+ChasingGirlData #class
+ch.ivyteam.ivy.business.data.store.context.BusinessCaseData #classAnnotation
+ch.axonivy.chasingGirl #namespace
+girl ch.axonivy.chasingGirl.Girl #field
+girl PERSISTENT #fieldModifier
+hasContact Boolean #field
+hasContact PERSISTENT #fieldModifier
+isAccepted Boolean #field
+isAccepted PERSISTENT #fieldModifier

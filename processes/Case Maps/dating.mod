@@ -14,6 +14,8 @@ dg0 @TextInP .xml .xml #zField
 dg0 @TextInP .responsibility .responsibility #zField
 dg0 @StartRequest f0 '' #zField
 dg0 @EndTask f1 '' #zField
+dg0 @RichDialog f3 '' #zField
+dg0 @PushWFArc f4 '' #zField
 dg0 @PushWFArc f2 '' #zField
 >Proto dg0 dg0 dating #zField
 dg0 f0 outLink start.ivp #txt
@@ -31,6 +33,7 @@ TaskTriggered.EXTYPE=0
 TaskTriggered.EXPRI=2
 TaskTriggered.TYPE=0
 TaskTriggered.PRI=2
+TaskTriggered.NAM=Make a date
 TaskTriggered.EXROL=Everybody' #txt
 dg0 f0 caseData businessCase.attach=true #txt
 dg0 f0 showInStartList 0 #txt
@@ -49,11 +52,30 @@ dg0 f0 @|StartRequestIcon #fIcon
 dg0 f1 type ch.axonivy.casemap.Data #txt
 dg0 f1 337 49 30 30 0 15 #rect
 dg0 f1 @|EndIcon #fIcon
+dg0 f3 targetWindow NEW #txt
+dg0 f3 targetDisplay TOP #txt
+dg0 f3 richDialogId ch.axonivy.casemap.ExecuteDate #txt
+dg0 f3 startMethod start() #txt
+dg0 f3 type ch.axonivy.casemap.Data #txt
+dg0 f3 requestActionDecl '<> param;' #txt
+dg0 f3 responseActionDecl 'ch.axonivy.casemap.Data out;
+' #txt
+dg0 f3 responseMappingAction 'out=in;
+' #txt
+dg0 f3 isAsynch false #txt
+dg0 f3 isInnerRd false #txt
+dg0 f3 userContext '* ' #txt
+dg0 f3 168 42 112 44 0 -8 #rect
+dg0 f3 @|RichDialogIcon #fIcon
+dg0 f4 expr out #txt
+dg0 f4 111 64 168 64 #arcP
 dg0 f2 expr out #txt
-dg0 f2 111 64 337 64 #arcP
+dg0 f2 280 64 337 64 #arcP
 >Proto dg0 .type ch.axonivy.casemap.Data #txt
 >Proto dg0 .processKind NORMAL #txt
 >Proto dg0 0 0 32 24 18 0 #rect
 >Proto dg0 @|BIcon #fIcon
-dg0 f0 mainOut f2 tail #connect
+dg0 f0 mainOut f4 tail #connect
+dg0 f4 head f3 mainIn #connect
+dg0 f3 mainOut f2 tail #connect
 dg0 f2 head f1 mainIn #connect

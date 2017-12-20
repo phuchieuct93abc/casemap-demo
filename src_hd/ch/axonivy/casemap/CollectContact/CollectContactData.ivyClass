@@ -1,0 +1,4 @@
+CollectContactData #class
+ch.axonivy.casemap.CollectContact #namespace
+chasingGirl ch.axonivy.chasingGirl.ChasingGirlData #field
+chasingGirl PERSISTENT #fieldModifier

@@ -33,6 +33,7 @@ TaskTriggered.EXTYPE=0
 TaskTriggered.EXPRI=2
 TaskTriggered.TYPE=0
 TaskTriggered.PRI=2
+TaskTriggered.NAM=Play gym
 TaskTriggered.EXROL=Everybody' #txt
 st0 f0 caseData businessCase.attach=true #txt
 st0 f0 showInStartList 0 #txt

@@ -1,0 +1,4 @@
+ShowYourLoveData #class
+ch.axonivy.casemap.ShowYourLove #namespace
+chasingGirl ch.axonivy.chasingGirl.ChasingGirlData #field
+chasingGirl PERSISTENT #fieldModifier

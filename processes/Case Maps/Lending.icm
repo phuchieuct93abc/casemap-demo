@@ -26,15 +26,22 @@
     }, {
       "id" : "chatting",
       "name" : "Chatting",
-      "processToExecute" : "casemap.demo:casemap-demo:16071FC2883EA5CC/start.ivp"
+      "processToExecute" : "casemap.demo:casemap-demo:16071FC2883EA5CC/start.ivp",
+      "preCondition" : {
+        "script" : "chasingGirlData.hasContact"
+      }
     }, {
       "id" : "dating",
       "name" : "Dating",
-      "processToExecute" : "casemap.demo:casemap-demo:16071FD0B1B29525/start.ivp"
+      "processToExecute" : "casemap.demo:casemap-demo:16071FD0B1B29525/start.ivp",
+      "preCondition" : {
+        "script" : "chasingGirlData.hasContact "
+      }
     } ],
     "sidesteps" : [ {
       "id" : "gifts_for_girl",
-      "name" : "Gifts for Girl"
+      "name" : "Gifts for Girl",
+      "processToExecute" : "casemap.demo:casemap-demo:16072027D322A699/start.ivp"
     } ]
   }, {
     "id" : "be_boyfriend",
@@ -49,7 +56,7 @@
       "name" : "Start your love",
       "processToExecute" : "casemap.demo:casemap-demo:16071FD8FE232BF5/start.ivp",
       "preCondition" : {
-        "script" : "",
+        "script" : "chasingGirlData.isAccepted",
         "label" : "does she accept your love?"
       }
     } ]

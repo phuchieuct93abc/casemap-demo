@@ -23,7 +23,7 @@ se0 f0 actionDecl 'ch.axonivy.casemap.Data out;
 ' #txt
 se0 f0 guid 16071FD8FE657B7F #txt
 se0 f0 requestEnabled true #txt
-se0 f0 triggerEnabled false #txt
+se0 f0 triggerEnabled true #txt
 se0 f0 callSignature start() #txt
 se0 f0 persist false #txt
 se0 f0 taskData 'TaskTriggered.ROL=Everybody
@@ -31,9 +31,10 @@ TaskTriggered.EXTYPE=0
 TaskTriggered.EXPRI=2
 TaskTriggered.TYPE=0
 TaskTriggered.PRI=2
+TaskTriggered.NAM=[Finish] Enjoy your love
 TaskTriggered.EXROL=Everybody' #txt
 se0 f0 caseData businessCase.attach=true #txt
-se0 f0 showInStartList 1 #txt
+se0 f0 showInStartList 0 #txt
 se0 f0 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
     <language>

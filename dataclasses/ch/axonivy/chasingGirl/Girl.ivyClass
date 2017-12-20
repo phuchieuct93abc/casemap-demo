@@ -1,0 +1,6 @@
+Girl #class
+ch.axonivy.chasingGirl #namespace
+name String #field
+name PERSISTENT #fieldModifier
+age String #field
+age PERSISTENT #fieldModifier
