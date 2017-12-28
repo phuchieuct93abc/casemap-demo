@@ -1,7 +1,7 @@
 {
   "uuid" : "d4678a56-233d-42f7-9c17-d78d29d3a9fb",
-  "id" : "lending",
-  "name" : "Lending",
+  "id" : "chasing_girl",
+  "name" : "Chasing girl",
   "stages" : [ {
     "id" : "preparation",
     "name" : "Preparation",
@@ -58,6 +58,13 @@
       "preCondition" : {
         "script" : "chasingGirlData.isAccepted",
         "label" : "does she accept your love?"
+      }
+    }, {
+      "id" : "poor_you",
+      "name" : "Poor you",
+      "processToExecute" : "casemap.demo:casemap-demo:1609D5EFC1523660/start.ivp",
+      "preCondition" : {
+        "script" : "!chasingGirlData.isAccepted"
       }
     } ]
   } ]

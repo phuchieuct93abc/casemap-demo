@@ -14,8 +14,6 @@ st0 @TextInP .xml .xml #zField
 st0 @TextInP .responsibility .responsibility #zField
 st0 @StartRequest f0 '' #zField
 st0 @EndTask f1 '' #zField
-st0 @GridStep f3 '' #zField
-st0 @PushWFArc f4 '' #zField
 st0 @PushWFArc f2 '' #zField
 >Proto st0 st0 startGymSport #zField
 st0 f0 outLink start.ivp #txt
@@ -52,33 +50,11 @@ st0 f0 @|StartRequestIcon #fIcon
 st0 f1 type ch.axonivy.casemap.Data #txt
 st0 f1 337 49 30 30 0 15 #rect
 st0 f1 @|EndIcon #fIcon
-st0 f3 actionDecl 'ch.axonivy.casemap.Data out;
-' #txt
-st0 f3 actionTable 'out=in;
-' #txt
-st0 f3 actionCode ivy.case.getBusinessCase().setName("Lending"); #txt
-st0 f3 security system #txt
-st0 f3 type ch.axonivy.casemap.Data #txt
-st0 f3 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<elementInfo>
-    <language>
-        <name>set business case</name>
-        <nameStyle>17,7
-</nameStyle>
-    </language>
-</elementInfo>
-' #txt
-st0 f3 176 42 112 44 -51 -8 #rect
-st0 f3 @|StepIcon #fIcon
-st0 f4 expr out #txt
-st0 f4 111 64 176 64 #arcP
 st0 f2 expr out #txt
-st0 f2 288 64 337 64 #arcP
+st0 f2 111 64 337 64 #arcP
 >Proto st0 .type ch.axonivy.casemap.Data #txt
 >Proto st0 .processKind NORMAL #txt
 >Proto st0 0 0 32 24 18 0 #rect
 >Proto st0 @|BIcon #fIcon
-st0 f0 mainOut f4 tail #connect
-st0 f4 head f3 mainIn #connect
-st0 f3 mainOut f2 tail #connect
+st0 f0 mainOut f2 tail #connect
 st0 f2 head f1 mainIn #connect

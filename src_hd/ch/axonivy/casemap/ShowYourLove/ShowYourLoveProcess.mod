@@ -53,6 +53,7 @@ Ss0 f3 type ch.axonivy.casemap.ShowYourLove.ShowYourLoveData #txt
 Ss0 f3 actionDecl 'ch.axonivy.casemap.ShowYourLove.ShowYourLoveData out;
 ' #txt
 Ss0 f3 actionTable 'out=in;
+out.chasingGirl.isAccepted=true;
 ' #txt
 Ss0 f3 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
@@ -74,6 +75,7 @@ Ss0 f6 type ch.axonivy.casemap.ShowYourLove.ShowYourLoveData #txt
 Ss0 f6 actionDecl 'ch.axonivy.casemap.ShowYourLove.ShowYourLoveData out;
 ' #txt
 Ss0 f6 actionTable 'out=in;
+out.chasingGirl.isAccepted=false;
 ' #txt
 Ss0 f6 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
