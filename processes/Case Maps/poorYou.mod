@@ -27,11 +27,21 @@ pu0 f0 guid 1609D5EFC3D91303 #txt
 pu0 f0 requestEnabled true #txt
 pu0 f0 triggerEnabled false #txt
 pu0 f0 callSignature start() #txt
+pu0 f0 persist false #txt
+pu0 f0 taskData 'TaskTriggered.ROL=Everybody
+TaskTriggered.EXTYPE=0
+TaskTriggered.EXPRI=2
+TaskTriggered.TYPE=0
+TaskTriggered.PRI=2
+TaskTriggered.EXROL=Everybody' #txt
 pu0 f0 caseData businessCase.attach=true #txt
+pu0 f0 showInStartList 0 #txt
 pu0 f0 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
     <language>
         <name>start.ivp</name>
+        <nameStyle>9,5,7
+</nameStyle>
     </language>
 </elementInfo>
 ' #txt

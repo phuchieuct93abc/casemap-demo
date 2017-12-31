@@ -1,2 +1,4 @@
 CongrateData #class
 ch.axonivy.casemap.Congrate #namespace
+data ch.axonivy.chasingGirl.ChasingGirlData #field
+data PERSISTENT #fieldModifier
