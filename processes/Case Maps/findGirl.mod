@@ -33,9 +33,10 @@ TaskTriggered.EXTYPE=0
 TaskTriggered.EXPRI=2
 TaskTriggered.TYPE=0
 TaskTriggered.PRI=2
-TaskTriggered.NAM=Find the girl
-TaskTriggered.EXROL=Everybody' #txt
-fl0 f0 caseData businessCase.attach=true #txt
+TaskTriggered.EXROL=Everybody
+TaskTriggered.NAM=Find the girl' #txt
+fl0 f0 caseData 'case.name=Chasing girl
+businessCase.attach=true' #txt
 fl0 f0 showInStartList 0 #txt
 fl0 f0 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
